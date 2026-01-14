@@ -53,14 +53,14 @@ For the complete syntax, see [GitHub Code Search documentation](https://docs.git
 
 The real power comes from combining path queries with keywords. Add any keyword before the path query to find configurations for specific domains, frameworks, or use cases:
 
-| Use Case | Search Query | What You'll Find |
-|----------|-------------|------------------|
-| Reddit skills | [`reddit path:.claude/skills`](https://github.com/search?q=reddit+path%3A.claude%2Fskills&type=code) | Claude skills for Reddit automation |
-| SwiftUI rules | [`swiftui path:**/.cursorrules`](https://github.com/search?q=swiftui+path%3A**%2F.cursorrules&type=code) | Cursor rules for SwiftUI projects |
-| React configs | [`react path:**/.windsurfrules`](https://github.com/search?q=react+path%3A**%2F.windsurfrules&type=code) | Windsurf rules for React |
-| Python conventions | [`python path:**/CONVENTIONS.md`](https://github.com/search?q=python+path%3A**%2FCONVENTIONS.md&type=code) | Aider conventions for Python |
-| TypeScript agents | [`typescript path:**/AGENTS.md`](https://github.com/search?q=typescript+path%3A**%2FAGENTS.md&type=code) | Agent instructions for TypeScript |
-| Next.js prompts | [`nextjs path:.github/prompts`](https://github.com/search?q=nextjs+path%3A.github%2Fprompts&type=code) | Copilot prompts for Next.js |
+| Use Case | Query | What You'll Find |   |
+|----------|-------|------------------|---|
+| Reddit skills | `reddit path:.claude/skills` | Claude skills for Reddit automation | [Try](https://github.com/search?q=reddit+path%3A.claude%2Fskills&type=code) |
+| SwiftUI rules | `swiftui path:**/.cursorrules` | Cursor rules for SwiftUI projects | [Try](https://github.com/search?q=swiftui+path%3A**%2F.cursorrules&type=code) |
+| React configs | `react path:**/.windsurfrules` | Windsurf rules for React | [Try](https://github.com/search?q=react+path%3A**%2F.windsurfrules&type=code) |
+| Python conventions | `python path:**/CONVENTIONS.md` | Aider conventions for Python | [Try](https://github.com/search?q=python+path%3A**%2FCONVENTIONS.md&type=code) |
+| TypeScript agents | `typescript path:**/AGENTS.md` | Agent instructions for TypeScript | [Try](https://github.com/search?q=typescript+path%3A**%2FAGENTS.md&type=code) |
+| Next.js prompts | `nextjs path:.github/prompts` | Copilot prompts for Next.js | [Try](https://github.com/search?q=nextjs+path%3A.github%2Fprompts&type=code) |
 
 You can use any keyword: framework names (Next.js, Laravel, Rails), languages (Rust, Go, Python), platforms (AWS, Vercel), or domains (e-commerce, auth, API).
 
@@ -126,11 +126,11 @@ Replace `[directory]` with the config folder (`.claude`, `.cursor`, `.roo`, etc.
 
 **Examples:**
 
-| Use Case | Search Query | What You'll Find |
-|----------|-------------|------------------|
-| Reddit-related files in .claude | [`path:**/.claude/**/*reddit*`](https://github.com/search?q=path%3A**%2F.claude%2F**%2F*reddit*&type=code) | Files with "reddit" in filename |
-| React rules in .cursor | [`path:**/.cursor/**/*react*`](https://github.com/search?q=path%3A**%2F.cursor%2F**%2F*react*&type=code) | Files with "react" in filename |
-| API-related skills | [`path:**/.claude/skills/**/*api*`](https://github.com/search?q=path%3A**%2F.claude%2Fskills%2F**%2F*api*&type=code) | Skill files with "api" in filename |
+| Use Case | Query | What You'll Find |   |
+|----------|-------|------------------|---|
+| Reddit-related files in .claude | `path:**/.claude/**/*reddit*` | Files with "reddit" in filename | [Try](https://github.com/search?q=path%3A**%2F.claude%2F**%2F*reddit*&type=code) |
+| React rules in .cursor | `path:**/.cursor/**/*react*` | Files with "react" in filename | [Try](https://github.com/search?q=path%3A**%2F.cursor%2F**%2F*react*&type=code) |
+| API-related skills | `path:**/.claude/skills/**/*api*` | Skill files with "api" in filename | [Try](https://github.com/search?q=path%3A**%2F.claude%2Fskills%2F**%2F*api*&type=code) |
 
 **Key difference from keyword search:**
 - `reddit path:.claude/skills` - finds "reddit" in file **contents**
@@ -484,15 +484,15 @@ Search for version patterns in config files:
 
 **Claude Code regex examples:**
 
-| Pattern | Query | Finds |
-|---------|-------|-------|
-| Markdown headings | [`/^## [A-Z].*/ path:**/CLAUDE.md`](https://github.com/search?q=%2F%5E%23%23+%5BA-Z%5D.*%2F+path%3A**%2FCLAUDE.md&type=code) | Section headers in CLAUDE.md |
-| Directives | [`/IMPORTANT:\|NOTE:\|NEVER:/ path:**/CLAUDE.md`](https://github.com/search?q=%2FIMPORTANT%3A%7CNOTE%3A%7CNEVER%3A%2F+path%3A**%2FCLAUDE.md&type=code) | Important instructions |
-| YAML frontmatter | [`/^---\n.*name:/ path:.claude/skills`](https://github.com/search?q=%2F%5E---%5Cn.*name%3A%2F+path%3A.claude%2Fskills&type=code) | Skill definitions with metadata |
-| Tool permissions | [`/"allowedTools"\s*:\s*\[/ path:.claude/settings`](https://github.com/search?q=%2F%22allowedTools%22%5Cs*%3A%5Cs*%5C%5B%2F+path%3A.claude%2Fsettings&type=code) | Settings with tool restrictions |
-| MCP servers | [`/"mcpServers"\s*:\s*\{/ path:**/.mcp.json`](https://github.com/search?q=%2F%22mcpServers%22%5Cs*%3A%5Cs*%5C%7B%2F+path%3A**%2F.mcp.json&type=code) | MCP server configurations |
-| Hook events | [`/"hooks"\s*:\s*\{\s*"[a-zA-Z]+"/ path:.claude`](https://github.com/search?q=%2F%22hooks%22%5Cs*%3A%5Cs*%5C%7B%5Cs*%22%5Ba-zA-Z%5D%2B%22%2F+path%3A.claude&type=code) | Hook event definitions |
-| Agent definitions | [`/^---\n.*description:/ path:.claude/agents`](https://github.com/search?q=%2F%5E---%5Cn.*description%3A%2F+path%3A.claude%2Fagents&type=code) | Custom agents with YAML frontmatter |
+| Pattern | Query | Finds |   |
+|---------|-------|-------|---|
+| Markdown headings | `/^## [A-Z].*/ path:**/CLAUDE.md` | Section headers in CLAUDE.md | [Try](https://github.com/search?q=%2F%5E%23%23+%5BA-Z%5D.*%2F+path%3A**%2FCLAUDE.md&type=code) |
+| Directives | `/IMPORTANT:\|NOTE:\|NEVER:/ path:**/CLAUDE.md` | Important instructions | [Try](https://github.com/search?q=%2FIMPORTANT%3A%7CNOTE%3A%7CNEVER%3A%2F+path%3A**%2FCLAUDE.md&type=code) |
+| YAML frontmatter | `/^---\n.*name:/ path:.claude/skills` | Skill definitions with metadata | [Try](https://github.com/search?q=%2F%5E---%5Cn.*name%3A%2F+path%3A.claude%2Fskills&type=code) |
+| Tool permissions | `/"allowedTools"\s*:\s*\[/ path:.claude/settings` | Settings with tool restrictions | [Try](https://github.com/search?q=%2F%22allowedTools%22%5Cs*%3A%5Cs*%5C%5B%2F+path%3A.claude%2Fsettings&type=code) |
+| MCP servers | `/"mcpServers"\s*:\s*\{/ path:**/.mcp.json` | MCP server configurations | [Try](https://github.com/search?q=%2F%22mcpServers%22%5Cs*%3A%5Cs*%5C%7B%2F+path%3A**%2F.mcp.json&type=code) |
+| Hook events | `/"hooks"\s*:\s*\{\s*"[a-zA-Z]+"/ path:.claude` | Hook event definitions | [Try](https://github.com/search?q=%2F%22hooks%22%5Cs*%3A%5Cs*%5C%7B%5Cs*%22%5Ba-zA-Z%5D%2B%22%2F+path%3A.claude&type=code) |
+| Agent definitions | `/^---\n.*description:/ path:.claude/agents` | Custom agents with YAML frontmatter | [Try](https://github.com/search?q=%2F%5E---%5Cn.*description%3A%2F+path%3A.claude%2Fagents&type=code) |
 
 ### Combining Keywords with Boolean
 
